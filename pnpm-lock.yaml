@@ -21,8 +21,8 @@ importers:
         specifier: ^0.3.14
         version: 0.3.16
       '@hono/node-server':
-        specifier: ^1.19.0
-        version: 1.19.17(hono@4.13.7)
+        specifier: ^2.1.6
+        version: 2.1.6(hono@4.13.7)
       hono:
         specifier: ^4.11.4
         version: 4.13.7
@@ -1419,6 +1419,12 @@ packages:
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
+
+  '@hono/node-server@2.1.6':
+    resolution: {integrity: sha512-p/KH9MnfNcsm3sR6x4lNgm5j+QN4Et8srKredl9DZfXiyZ1UQ3aQ2YVpFLbqktYN5JI+DB+VZFKM2PqE5hLKjQ==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      hono: ^4 || ^5.0.0-0
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -6108,9 +6114,6 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.6.5:
-    resolution: {integrity: sha512-v5l/aFXZQeai4awLbOpSoHecE9UiMrnfx75tEXLjNonXVARxQ5mOeipTjROUchszUNCqnE+hqAMujRsRHsut2Q==}
-
   zod@4.6.6:
     resolution: {integrity: sha512-4UmzQUF5fxvfcYHlbjBmejU+w+hbDnWFx4aS8kBx7nPBHcO2SqPbpAG8snbdg+Xse4pRefR98hgjFgIMCI/UhA==}
 
@@ -7838,6 +7841,10 @@ snapshots:
     dependencies:
       hono: 4.13.7
 
+  '@hono/node-server@2.1.6(hono@4.13.7)':
+    dependencies:
+      hono: 4.13.7
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@3.1.7':
@@ -7958,7 +7965,7 @@ snapshots:
       langsmith: 0.10.3(@opentelemetry/api@1.9.1)(ws@8.21.3)
       mustache: 4.2.0
       p-queue: 6.6.2
-      zod: 4.6.5
+      zod: 4.6.6
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - '@opentelemetry/exporter-trace-otlp-proto'
@@ -7981,14 +7988,14 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@langchain/langgraph@1.4.15(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@4.6.5)':
+  '@langchain/langgraph@1.4.15(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@4.6.6)':
     dependencies:
       '@langchain/core': 1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3)
       '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))
       '@langchain/langgraph-sdk': 1.11.0(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@langchain/protocol': 0.0.19
       '@standard-schema/spec': 1.1.0
-      zod: 4.6.5
+      zod: 4.6.6
     transitivePeerDependencies:
       - react
       - react-dom
@@ -10928,10 +10935,10 @@ snapshots:
   langchain@1.5.11(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))(@opentelemetry/api@1.9.1)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(ws@8.21.3):
     dependencies:
       '@langchain/core': 1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3)
-      '@langchain/langgraph': 1.4.15(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@4.6.5)
+      '@langchain/langgraph': 1.4.15(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(zod@4.6.6)
       '@langchain/langgraph-checkpoint': 1.1.5(@langchain/core@1.2.11(@opentelemetry/api@1.9.1)(ws@8.21.3))
       langsmith: 0.10.3(@opentelemetry/api@1.9.1)(ws@8.21.3)
-      zod: 4.6.5
+      zod: 4.6.6
     transitivePeerDependencies:
       - '@opentelemetry/api'
       - '@opentelemetry/exporter-trace-otlp-proto'
@@ -13651,8 +13658,6 @@ snapshots:
   zod@3.25.75: {}
 
   zod@3.25.76: {}
-
-  zod@4.6.5: {}
 
   zod@4.6.6: {}
 
